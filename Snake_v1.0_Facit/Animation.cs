@@ -185,7 +185,7 @@ namespace Snake_v1._0_Facit
             Console.SetCursorPosition(22, 10);
             Console.WriteLine("Ö");
 
-            Thread.Sleep(200);
+            Thread.Sleep(1000);
 
             Console.Clear();
 

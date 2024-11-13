@@ -12,9 +12,6 @@ namespace Snake_v1._0_Facit
         internal void GoGame()
         {
             Console.CursorVisible = false;
-
-            int xPositionApple = 10;
-            int yPositionApple = 10;
             int applesEaten = 0;
             Random random = new Random();
             string userAction = " ";

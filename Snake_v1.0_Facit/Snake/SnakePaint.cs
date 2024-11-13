@@ -12,7 +12,7 @@ namespace Snake_v1._0_Facit.Snake
         {
             // Rita ut snake huvud
             Console.SetCursorPosition(xPositionIn[0], yPositionIn[0]);
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("ö");
 
             // Gör snake längre
@@ -20,7 +20,7 @@ namespace Snake_v1._0_Facit.Snake
             for (int i = 1; i < applesEaten + 1; i++)
             {
                 Console.SetCursorPosition(xPositionIn[i], yPositionIn[i]);
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("o");
             }
 
