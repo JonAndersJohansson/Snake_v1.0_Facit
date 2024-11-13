@@ -40,10 +40,12 @@ namespace Snake_v1._0_Facit
             ConsoleKey command = Console.ReadKey().Key;
 
             // Flytta på snake
+            Console.SetCursorPosition(80, 19);
+            Console.WriteLine("CURRENT SCORE:");
+
             do
             {
-                Console.SetCursorPosition(100, 20);
-                Console.WriteLine();
+                Console.SetCursorPosition(86, 20);
                 Console.WriteLine(applesEaten);
 
                 switch (command)
