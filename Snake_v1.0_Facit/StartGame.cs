@@ -100,7 +100,7 @@ namespace Snake_v1._0_Facit
                     Console.SetCursorPosition(xPositionApple, yPositionApple);
                     Console.Write(" ");
 
-                    Console.ReadLine();
+                    Console.ReadKey();
                     Console.Clear();
 
                     // Låt spelaren välja att spela igen

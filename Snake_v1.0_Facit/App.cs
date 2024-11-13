@@ -32,6 +32,9 @@ namespace Snake_v1._0_Facit
             var instruction = new Instruction();
             var startGame = new StartGame();
 
+            new Animation().StartAnim();
+
+
             menuChoice.MakeAChoice(menu, instruction, startGame,
             build, userAction, isGameOn, applesEaten, random, isWallHit, isAppleEaten, gameSpeed, Dificalty);
 
