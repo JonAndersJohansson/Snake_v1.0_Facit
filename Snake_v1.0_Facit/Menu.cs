@@ -16,6 +16,7 @@ namespace Snake_v1._0_Facit
             Console.WriteLine("3: Exit");
 
             userAction = Console.ReadLine().ToLower();
+
         }
 
     }

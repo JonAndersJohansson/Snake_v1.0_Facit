@@ -7,11 +7,22 @@ using System.Threading.Tasks;
 
 namespace Snake_v1._0_Facit
 {
-    internal class App : Varibals
+    internal class App
     {
         internal void GoGame()
         {
             Console.CursorVisible = false;
+
+            int xPositionApple = 10;
+            int yPositionApple = 10;
+            int applesEaten = 0;
+            Random random = new Random();
+            string userAction = " ";
+            decimal gameSpeed = 150m;
+
+            bool isGameOn = true;
+            bool isWallHit = false;
+            bool isAppleEaten = false;
 
             var menu = new Menu();
             var menuChoice = new MenuChoice();
@@ -19,7 +30,8 @@ namespace Snake_v1._0_Facit
             var instruction = new Instruction();
             var startGame = new StartGame();
 
-            menuChoice.MakeAChoice(menu, instruction, startGame, build);
+            menuChoice.MakeAChoice(menu, instruction, startGame,
+            build, userAction, isGameOn, applesEaten, random, isWallHit, isAppleEaten, gameSpeed);
 
 
         }

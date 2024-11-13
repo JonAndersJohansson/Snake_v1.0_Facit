@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace Snake_v1._0_Facit
 {
-    public class StartGame : Varibals
+    public class StartGame
     {
-        public void Start(int[] xPosition, int[] yPosition) 
+        public void Start(int[] xPosition, int[] yPosition, int applesEaten, Random random, out int xPositionApple,
+            out int yPositionApple, bool isWallHit, bool isGameOn, bool isAppleEaten, decimal gameSpeed) 
         {
+
             var snakepaint = new SnakePaint();
             var snakehitwall = new SnakeHitWall();
 

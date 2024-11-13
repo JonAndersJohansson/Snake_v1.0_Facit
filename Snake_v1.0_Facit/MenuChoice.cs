@@ -1,4 +1,5 @@
-﻿using Snake_v1._0_Facit.Snake;
+﻿using Snake_v1._0_Facit.Apple;
+using Snake_v1._0_Facit.Snake;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +8,16 @@ using System.Threading.Tasks;
 
 namespace Snake_v1._0_Facit
 {
-    public class MenuChoice : Varibals
+    public class MenuChoice
     {
-        public void MakeAChoice(Menu menu, Instruction instruction, StartGame startGame, BuildPlayBoard buildPlayBoard)
+        public void MakeAChoice(Menu menu, Instruction instruction, StartGame startGame, 
+            BuildPlayBoard buildPlayBoard, string userAction, bool isGameOn, int applesEaten,
+            Random random, bool isWallHit, bool isAppleEaten, decimal gameSpeed)
         {
+            bool isStayInMenu = true;
             do
             {
+            
                 // Gör en välkomstskärm (meny)
                 // Låt spelaren läser instruktionerna om han vill
                 menu.ShowMenu(out userAction);
@@ -29,10 +34,10 @@ namespace Snake_v1._0_Facit
                 switch (userAction)
                 {
                     case "1":
-                        instruction.ShowInstructions(userAction, buildPlayBoard);
+                        instruction.ShowInstructions(buildPlayBoard);
                         break;
                     case "2":
-                        startGame.Start(xPosition, yPosition);
+                        startGame.Start(xPosition, yPosition, applesEaten, random, out int xPositionApple, out int yPositionApple, isWallHit, isGameOn, isAppleEaten, gameSpeed);
                         break;
                     case "3":
                         isStayInMenu = false;

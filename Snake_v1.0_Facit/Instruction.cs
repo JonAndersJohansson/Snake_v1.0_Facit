@@ -9,7 +9,7 @@ namespace Snake_v1._0_Facit
     public class Instruction
     {
 
-        public void ShowInstructions(string userAction, BuildPlayBoard buildPlayBoard)
+        public void ShowInstructions(BuildPlayBoard buildPlayBoard)
         {
             Console.Clear();
             buildPlayBoard.BuildWall();
