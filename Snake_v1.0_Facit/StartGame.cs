@@ -42,6 +42,10 @@ namespace Snake_v1._0_Facit
             // Flytta på snake
             do
             {
+                Console.SetCursorPosition(100, 20);
+                Console.WriteLine();
+                Console.WriteLine(applesEaten);
+
                 switch (command)
                 {
                     case ConsoleKey.LeftArrow:

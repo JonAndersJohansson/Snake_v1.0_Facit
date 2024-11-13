@@ -23,6 +23,16 @@ namespace Snake_v1._0_Facit
             Console.WriteLine("Varje äpple gör ormen längre och snabbare!");
             Console.SetCursorPosition(14, 13);
             Console.WriteLine("Tryck på valfri knapp för att fortsätta");
+            Console.SetCursorPosition(12, 19);
+            Console.WriteLine("Use the arrows to move the snake around the track");
+            Console.SetCursorPosition(16, 21);
+            Console.WriteLine("The snake dies if it hits the outer wall");
+            Console.SetCursorPosition(20, 23);
+            Console.WriteLine("Eat apples to get points!");
+            Console.SetCursorPosition(13, 25);
+            Console.WriteLine("Each apple makes the snake longer and faster!");
+            Console.SetCursorPosition(20, 27);
+            Console.WriteLine("Press any key to continue");
             Console.ReadLine();
             Console.Clear();
             //ShowMenu(out userAction);
