@@ -20,6 +20,8 @@ namespace Snake_v1._0_Facit
             string userAction = " ";
             decimal gameSpeed = 150m;
 
+            string Dificalty = " ";
+
             bool isGameOn = true;
             bool isWallHit = false;
             bool isAppleEaten = false;
@@ -31,7 +33,7 @@ namespace Snake_v1._0_Facit
             var startGame = new StartGame();
 
             menuChoice.MakeAChoice(menu, instruction, startGame,
-            build, userAction, isGameOn, applesEaten, random, isWallHit, isAppleEaten, gameSpeed);
+            build, userAction, isGameOn, applesEaten, random, isWallHit, isAppleEaten, gameSpeed, Dificalty);
 
 
         }

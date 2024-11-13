@@ -8,7 +8,7 @@ namespace Snake_v1._0_Facit
 {
     public class Menu
     {
-        public void ShowMenu(out string userAction)
+        public void ShowMenu(out string userAction, out string Dificalty)
         {
             Console.Clear();
             Console.WriteLine("1: How to play");
@@ -17,6 +17,15 @@ namespace Snake_v1._0_Facit
 
             userAction = Console.ReadLine().ToLower();
 
+            if (userAction == "2")
+            {
+                Console.Clear();
+                Console.WriteLine("1: Easy");
+                Console.WriteLine("2: Hard");
+                Console.WriteLine("3: INSANE!!!");
+                
+            }
+            Dificalty = Console.ReadLine().ToLower();
         }
 
     }
