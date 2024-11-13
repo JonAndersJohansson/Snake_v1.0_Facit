@@ -99,8 +99,9 @@ namespace Snake_v1._0_Facit
                     // Raderar äpplet vid game over
                     Console.SetCursorPosition(xPositionApple, yPositionApple);
                     Console.Write(" ");
-
+                    Thread.Sleep(300);
                     Console.ReadKey();
+
                     Console.Clear();
 
                     // Låt spelaren välja att spela igen
